@@ -10,23 +10,15 @@ interface Logo {
 
 /** Lista de logos: pon tus archivos en public/logos/ */
 const logos: Logo[] = [
-  { id: 1, name: 'Boxer TTL', src: '/logos/logo1.png' },
-  { id: 2, name: 'Hot Nuts', src: '/logos/logo2.png' },
-  { id: 3, name: 'Bon o Bon', src: '/logos/logo3.png' },
-  { id: 4, name: 'Cognizant', src: '/logos/logo4.png' },
-  { id: 5, name: 'Ninja', src: '/logos/logo5.png' },
-  { id: 6, name: 'Subaru', src: '/logos/logo6.png' },
-  { id: 7, name: 'Natura', src: '/logos/logo7.png' },
-  { id: 8, name: 'Avon', src: '/logos/logo8.png' },
-  { id: 9, name: 'Banco Azteca', src: '/logos/logo9.png' },
-  { id: 10, name: 'S Mart', src: '/logos/logo10.png' },
-  { id: 11, name: 'Walmart', src: '/logos/logo11.png' },
-  { id: 12, name: 'CFE', src: '/logos/logo12.png' },
-  { id: 13, name: 'UPAX', src: '/logos/logo13.png' },
-  { id: 14, name: 'FOL Mexico', src: '/logos/logo14.png' },
-  { id: 15, name: 'Riot Games', src: '/logos/logo15.png' },
-  { id: 16, name: 'Elektra', src: '/logos/logo16.png' },
-  { id: 17, name: 'Plaza Mexico', src: '/logos/logo17.png' },
+  { id: 1, name: 'Boxer TTL', src: '/logos/ade1000_logo.png' },
+  { id: 2, name: 'Hot Nuts', src: '/logos/aoi_logo.png' },
+  { id: 3, name: 'Bon o Bon', src: '/logos/fluxo_logo.png' },
+  { id: 4, name: 'Cognizant', src: '/logos/ghost_logo.png' },
+  { id: 5, name: 'Ninja', src: '/logos/gs_logo.png' },
+  { id: 6, name: 'Subaru', src: '/logos/la_suprema_logo.png' },
+  { id: 7, name: 'Natura', src: '/logos/mt3_logo.png' },
+  { id: 8, name: 'Avon', src: '/logos/plagasa_logo.png' },
+  { id: 9, name: 'Banco Azteca', src: '/logos/visitapp_logo.png' }
 ]
 
 /** Baraja un array (Fisher–Yates) */
@@ -143,7 +135,7 @@ export default function ProjectCarousel() {
     <div className="flex flex-col justify-center space-y-8 py-24">
       <div className="mx-auto max-w-screen-lg flex flex-col items-center space-y-8">
         <div className="text-center">
-          <GradientHeading>Los mejores ya están con nosotros <br/><br/>¿Y tu?</GradientHeading>
+          <GradientHeading>Empresas que confiaron en mi</GradientHeading>
         </div>
         <div className="flex space-x-4">
           {sets.map((col, i) => (

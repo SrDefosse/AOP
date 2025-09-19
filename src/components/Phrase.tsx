@@ -11,7 +11,7 @@ interface PhraseProps {
 }
 
 export default function Phrase({
-  text = "Design creates culture.",
+  text = "Soy capaz de afrontar cualquier reto y superarlo.",
   className = "",
   speed = 16,
 }: PhraseProps) {
@@ -40,8 +40,8 @@ export default function Phrase({
       {/* CSS interno (sin Next/styled-jsx) */}
       <style>{`
         @keyframes phrase-marquee {
-          from { transform: translateX(70%); }
-          to   { transform: translateX(-70%); }
+          from { transform: translateX(100%); }
+          to   { transform: translateX(-100%); }
         }
         .phrase-animate {
           animation: phrase-marquee var(--speed) infinite linear;

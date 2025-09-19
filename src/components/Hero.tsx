@@ -34,7 +34,7 @@ function Button({ children, variant = "default", size = "sm", className = "" }: 
 export default function Hero() {
   const [titleNumber, setTitleNumber] = useState(0);
   const titles = useMemo(
-    () => ["amazing", "new", "wonderful", "beautiful", "smart"],
+    () => ["oportunidades", "crecimiento", "resultados", "conexiones", "impacto"],
     []
   );
 
@@ -50,7 +50,7 @@ export default function Hero() {
   }, [titleNumber, titles]);
 
   return (
-    <div className="w-full min-h-screen py-12 px-6 lg:py-20 lg:px-12">
+    <div className="w-full min-h-screen flex items-center justify-center py-12 px-6 lg:py-20 lg:px-12">
       <div className="container mx-auto">
         <div className="relative">
           {/* Contenedor de imagen con esquinas redondeadas */}
@@ -68,7 +68,7 @@ export default function Hero() {
                 </div>
                 <div className="flex gap-4 flex-col">
                   <h1 className="text-5xl md:text-7xl max-w-2xl tracking-tighter text-center font-regular text-white">
-                    <span className="text-spektr-cyan-50">This is something</span>
+                    <span className="text-spektr-cyan-50">Construyo marcas y estrategias que inspiran</span>
                     <span className="relative flex w-full justify-center overflow-hidden text-center md:pb-4 md:pt-1">
                       &nbsp;
                       {titles.map((title, index) => (
@@ -96,18 +96,13 @@ export default function Hero() {
                   </h1>
 
                   <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center text-white">
-                    Managing a small business today is already tough. Avoid further
-                    complications by ditching outdated, tedious trade methods. Our
-                    goal is to streamline SMB trade, making it easier and faster than
-                    ever.
+                  Soy un estratega de marca y contenidos con IA con más de 3 años de experiencia ayudando 
+                  a empresas a crecer a través de branding, marketing digital y narrativas que convierten.
                   </p>
                 </div>
                 <div className="flex flex-row gap-3 text-white">
                   <Button size="lg" className="gap-4" variant="outline">
-                    Jump on a call <IoCall className="w-4 h-4" />
-                  </Button>
-                  <Button size="lg" className="gap-4">
-                    Sign up here <IoArrowForward className="w-4 h-4" />
+                    Contáctame <IoCall className="w-4 h-4" />
                   </Button>
                 </div>
               </div>

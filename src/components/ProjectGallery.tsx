@@ -4,29 +4,24 @@ import { useState } from 'react';
 const accordionItems = [
   {
     id: 1,
-    title: 'Voice Assistant',
-    imageUrl: 'https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?q=80&w=1974&auto=format&fit=crop',
+    title: 'Marketing',
+    imageUrl: '/skills/skill1.png',
   },
   {
     id: 2,
-    title: 'AI Image Generation',
-    imageUrl: 'https://images.unsplash.com/photo-1677756119517-756a188d2d94?q=80&w=2070&auto=format&fit=crop',
+    title: 'Conten Automation',
+    imageUrl: '/skills/skill2.png',
   },
   {
     id: 3,
-    title: 'AI Chatbot + Local RAG',
-    imageUrl: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1974&auto=format&fit=crop',
+    title: 'Artificial Intelligence',
+    imageUrl: '/skills/skill3.png',
   },
   {
     id: 4,
-    title: 'AI Agent',
-    imageUrl: 'https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2090&auto=format&fit=crop',
-  },
-  {
-    id: 5,
-    title: 'Visual Understanding',
-    imageUrl: 'https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?q=80&w=2070&auto=format&fit=crop',
-  },
+    title: 'Brand Strategy',
+    imageUrl: '/skills/skill4.png',
+  }
 ];
 
 // --- Accordion Item Component ---
@@ -86,17 +81,17 @@ export default function ProjectGallery() {
           {/* Left Side: Text Content */}
           <div className="w-full md:w-1/2 text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight tracking-tighter">
-              Accelerate Gen-AI Tasks on Any Device
+            Skills Aplicadas en Proyectos
             </h1>
             <p className="mt-6 text-lg text-white max-w-xl mx-auto md:mx-0">
-              Build high-performance AI apps on-device without the hassle of model compression or edge deployment.
+            Busco implementar creatividad, estrategia, y evolución en cada proyecto que trabajo, siempre estando a la vanguardia
             </p>
             <div className="mt-8">
               <a
                 href="#contact"
                 className="inline-block bg-white text-black font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-gray-800 transition-colors duration-300"
               >
-                Contact Us
+                Contáctame
               </a>
             </div>
           </div>

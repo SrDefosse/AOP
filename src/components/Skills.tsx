@@ -115,7 +115,7 @@ export default function Skills() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-light tracking-tight text-white mb-4 drop-shadow-lg">
-            Skills & Tools
+            Skills
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-white/60 to-white/40 mx-auto rounded-full shadow-lg"></div>
         </motion.div>

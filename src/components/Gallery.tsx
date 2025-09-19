@@ -65,28 +65,28 @@ export function FocusCards({ cards }: { cards: CardItem[] }) {
 export default function GalleryDemo(): React.ReactNode {
   const cards: CardItem[] = [
     {
-      title: "Forest Adventure",
-      src: "/gallery1.png",
+      title: "Plaga",
+      src: "/gallery/gallery1.png",
     },
     {
-      title: "Valley of life",
-      src: "/gallery2.png",
+      title: "Fluxo",
+      src: "/gallery/gallery2.png",
     },
     {
-      title: "Sala behta hi jayega",
-      src: "/gallery3.png",
+      title: "Datz bites",
+      src: "/gallery/gallery3.png",
     },
     {
-      title: "Camping is for pros",
-      src: "/gallery4.png",
+      title: "Stoever Group",
+      src: "/gallery/gallery4.png",
     },
     {
-      title: "The road not taken",
-      src: "/gallery5.png",
+      title: "Stoever Construction",
+      src: "/gallery/gallery5.png",
     },
     {
-      title: "The First Rule",
-      src: "/gallery6.png",
+      title: "MT3",
+      src: "/gallery/gallery6.png",
     },
   ];
 

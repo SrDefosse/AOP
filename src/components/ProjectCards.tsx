@@ -1,11 +1,5 @@
 import { motion } from "framer-motion";
-import { 
-  IoTrendingUp, 
-  IoColorPalette, 
-  IoRocket, 
-  IoShareSocial,
-  IoArrowForward 
-} from "react-icons/io5";
+import { IoArrowForward } from "react-icons/io5";
 
 interface Project {
   id: number;
@@ -14,50 +8,45 @@ interface Project {
   category: string;
   tools: string[];
   results: string;
-  icon: React.ReactNode;
-  color: string;
+  logo: string;
 }
 
 const projects: Project[] = [
   {
     id: 1,
-    title: "Campaña Digital E-commerce",
-    description: "Estrategia completa de marketing digital para aumentar ventas online de marca de moda sostenible.",
-    category: "Performance Marketing",
-    tools: ["Google Ads", "Facebook Ads", "Analytics", "Shopify"],
-    results: "+150% ROI",
-    icon: <IoTrendingUp className="w-6 h-6" />,
-    color: "bg-gradient-to-br from-slate-700 to-slate-800"
+    title: "Grupo Stoever",
+    description: "Actualización y posicionamiento en mercado B2B",
+    category: "Rebranding completo - Web design - Video corporativo",
+    tools: ["Adobe Creative", "Figma", "Premiere Pro", "After Effects"],
+    results: "Posicionamiento B2B",
+    logo: "/logos/gs_logo.png",
   },
   {
     id: 2,
-    title: "Rebranding Completo",
-    description: "Rediseño de identidad visual y estrategia de marca para startup tecnológica en expansión.",
-    category: "Brand Strategy",
-    tools: ["Adobe Creative", "Figma", "Notion", "Slack"],
-    results: "+200% reconocimiento",
-    icon: <IoColorPalette className="w-6 h-6" />,
-    color: "bg-gradient-to-br from-gray-700 to-gray-800"
+    title: "Fluxo",
+    description: "Creación de identidad visual y estrategia de marca para startup tecnológica en expansión.",
+    category: "Creación de marca - Web design",
+    tools: ["Adobe Creative", "Figma", "WordPress", "Photoshop"],
+    results: "Identidad consolidada",
+    logo: "/logos/fluxo_logo.png",
   },
   {
     id: 3,
-    title: "Lanzamiento de Producto",
-    description: "Coordinación y ejecución de lanzamiento multi-canal para aplicación móvil innovadora.",
-    category: "Product Launch",
-    tools: ["Asana", "Mailchimp", "LinkedIn", "PR Tools"],
-    results: "50K+ usuarios mes 1",
-    icon: <IoRocket className="w-6 h-6" />,
-    color: "bg-gradient-to-br from-zinc-700 to-zinc-800"
+    title: "ADE1000",
+    description: "Creación de estrategias de marca para mercado B2B buscando el reconocimiento de marca para el usuario.",
+    category: "Planeación de estrategias - Seguimiento de diseño web - Estrategias 360",
+    tools: ["Analytics", "Figma", "Notion", "Google Ads"],
+    results: "Reconocimiento B2B",
+    logo: "/logos/ade1000_logo.png",
   },
   {
     id: 4,
-    title: "Estrategia Social Media",
-    description: "Desarrollo de contenido y gestión de redes sociales para cadena de restaurantes premium.",
-    category: "Social Media",
-    tools: ["Instagram", "TikTok", "Canva", "Buffer"],
-    results: "+300% engagement",
-    icon: <IoShareSocial className="w-6 h-6" />,
-    color: "bg-gradient-to-br from-neutral-700 to-neutral-800"
+    title: "VISITAPP",
+    description: "Crear formalidad digital para la empresa, posicionándola como líder en el mercado con estrategias digitales.",
+    category: "Re-branding - Web design - Campañas mensuales de contenido",
+    tools: ["Adobe Creative", "WordPress", "Social Media", "Canva"],
+    results: "Liderazgo digital",
+    logo: "/logos/visitapp_logo.png",
   }
 ];
 
@@ -68,15 +57,19 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       whileHover={{ y: -8, scale: 1.02 }}
-      className="group relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg hover:shadow-2xl transition-all duration-300"
+      className="group relative overflow-hidden rounded-2xl bg-white/10 backdrop-blur-xl border border-white/30 shadow-lg hover:shadow-2xl hover:bg-white/30 transition-all duration-300"
     >
       {/* Header */}
-      <div className={`${project.color} p-6 text-white relative`}>
+      <div className="p-6 text-white relative border-b border-white/30">
         <div className="flex items-center justify-between mb-3">
-          <div className="p-2 bg-black/20 rounded-lg">
-            {project.icon}
+          <div className="p-2 bg-neutral-700/20 backdrop-blur-xl rounded-lg border border-white/20">
+            <img 
+              src={project.logo} 
+              alt={`${project.title} logo`}
+              className="w-16 h-16 object-contain"
+            />
           </div>
-          <span className="text-xs font-medium bg-black/20 px-3 py-1 rounded-full">
+          <span className="text-xs font-medium bg-white/10 backdrop-blur-xl px-3 py-1 rounded-full border border-white/40">
             {project.category}
           </span>
         </div>
@@ -88,20 +81,20 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
 
       {/* Content */}
       <div className="p-6">
-        <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4">
+        <p className="text-gray-200 text-sm leading-relaxed mb-4">
           {project.description}
         </p>
 
         {/* Tools */}
         <div className="mb-4">
-          <h4 className="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wider mb-2">
+          <h4 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">
             Herramientas
           </h4>
           <div className="flex flex-wrap gap-2">
             {project.tools.map((tool, toolIndex) => (
               <span
                 key={toolIndex}
-                className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs rounded-md font-medium"
+                className="px-2 py-1 bg-white/10 text-gray-200 text-xs rounded-md font-medium"
               >
                 {tool}
               </span>
@@ -112,7 +105,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
         {/* Action */}
         <motion.button
           whileHover={{ x: 4 }}
-          className="group flex items-center gap-2 text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+          className="group flex items-center gap-2 text-sm font-semibold text-gray-200 hover:text-white transition-colors"
         >
           Ver detalles 
           <IoArrowForward className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -133,10 +126,10 @@ export default function ProjectCards() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Proyectos <span className="text-spektr-cyan-50">Destacados</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-white max-w-3xl mx-auto">
             Una selección de campañas y proyectos que han generado resultados excepcionales 
             para marcas innovadoras y empresas en crecimiento.
           </p>
@@ -156,15 +149,12 @@ export default function ProjectCards() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="text-center mt-16"
         >
-          <p className="text-gray-600 dark:text-gray-300 mb-6">
-            ¿Tienes un proyecto en mente? Hablemos de cómo puedo ayudarte a alcanzar tus objetivos.
-          </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center gap-3 bg-gray-900 dark:bg-gray-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors shadow-lg"
+            className="inline-flex items-center gap-3 bg-neutral-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-neutral-800 transition-colors shadow-lg cursor-pointer"
           >
-            Iniciar Proyecto <IoArrowForward className="w-5 h-5" />
+            Contáctame <IoArrowForward className="w-5 h-5" />
           </motion.button>
         </motion.div>
       </div>

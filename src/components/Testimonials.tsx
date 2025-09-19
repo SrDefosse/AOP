@@ -146,11 +146,8 @@ function Testimonials() {
         >
 
           <h2 className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tighter mt-5">
-            What our users say
+            Lo que dicen de mi
           </h2>
-          <p className="text-center mt-5 opacity-75 text-white">
-            See what our customers have to say about us.
-          </p>
         </motion.div>
 
         <div className="text-white flex justify-center gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] max-h-[740px] overflow-hidden">

@@ -6,13 +6,16 @@ import ProjectCards from './components/ProjectCards'
 import GalleryDemo from './components/Gallery'
 import Skills from './components/Skills'
 import ProjectGallery from './components/ProjectGallery'
-import ProjectCarousel from './components/ProjectCarousel'
+import Logos from './components/Logos'
 import ProjectContent from './components/ProjectContent'
 import Testimonials from './components/Testimonials'
 import Phrase from './components/Phrase'
 import FooterMinimal from './components/Footer'
+import useSmoothScroll from './hooks/useSmoothScroll'
 
 function App() {
+  // Enable smooth scrolling
+  useSmoothScroll();
 
   return (
     <div className="relative min-h-screen">
@@ -50,7 +53,7 @@ function App() {
           <ProjectContent />
         </div>
         <div>
-          <ProjectCarousel />
+          <Logos />
         </div>
         <div>
           <Testimonials />
