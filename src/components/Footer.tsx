@@ -8,11 +8,9 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/f
 type NavItem = { label: string; href: string };
 
 const NAV_ITEMS: NavItem[] = [
-  { label: "Home", href: "#" },
-  { label: "About", href: "#" },
-  { label: "Services", href: "#" },
-  { label: "Products", href: "#" },
-  { label: "Contact", href: "#" },
+  { label: "Inicio", href: "#" },
+  { label: "Proyectos", href: "#" },
+  { label: "Contacto", href: "#" },
 ];
 
 const SOCIALS = [
@@ -45,7 +43,7 @@ function SocialIcon({
 function FooterMinimal() {
   return (
     <footer className="w-full bg-transparent py-16">
-      <div className="mx-auto flex max-w-3xl flex-col items-center gap-8 px-4 text-center">
+      <div className="mx-auto flex max-w-3xl flex-col items-center gap-8 px-4 text-center relative z-10">
         {/* Logo */}
         <div className="flex h-24 w-24 items-center justify-center rounded-full bg-black/5 dark:bg-white/10">
           <img

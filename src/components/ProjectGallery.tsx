@@ -79,7 +79,7 @@ export default function ProjectGallery() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           
           {/* Left Side: Text Content */}
-          <div className="w-full md:w-1/2 text-center md:text-left">
+          <div className="w-full md:w-1/2 text-center md:text-left z-10">
             <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight tracking-tighter">
             Skills Aplicadas en Proyectos
             </h1>

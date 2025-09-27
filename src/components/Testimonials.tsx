@@ -7,74 +7,55 @@ import { motion } from "framer-motion";
 
 type Testimonial = {
   text: string;
-  image: string;
   name: string;
   role: string;
 };
 
 const testimonials: Testimonial[] = [
   {
-    text:
-      "This ERP revolutionized our operations, streamlining finance and inventory. The cloud-based platform keeps us productive, even remotely.",
-    image: "https://randomuser.me/api/portraits/women/1.jpg",
-    name: "Briana Patton",
-    role: "Operations Manager",
+    text: "Nos prometió claridad y nos entregó resultados. El sitio web pasó de 'bonito' a convertir: más leads calificados y mensajes de clientes que entienden mejor lo que hacemos.",
+    name: "Gerardo",
+    role: "CEO, Grupo Stoever",
   },
   {
-    text:
-      "Implementing this ERP was smooth and quick. The customizable, user-friendly interface made team training effortless.",
-    image: "https://randomuser.me/api/portraits/men/2.jpg",
-    name: "Bilal Ahmed",
-    role: "IT Manager",
+    text: "Más que un proveedor, fue un aliado estratégico. No solo nos entregó un video espectacular, sino que también nos dio un plan para sacarle el máximo provecho. El video corporativo abrió puertas con tres clientes clave.",
+    name: "Javier",
+    role: "CEO, MOVICARGA",
   },
   {
-    text:
-      "The support team is exceptional, guiding us through setup and providing ongoing assistance, ensuring our satisfaction.",
-    image: "https://randomuser.me/api/portraits/women/3.jpg",
-    name: "Saman Malik",
-    role: "Customer Support Lead",
+    text: "Su energía creativa y su disciplina para los procesos nos dieron confianza. Sabíamos que el proyecto estaba en buenas manos.",
+    name: "Monica",
+    role: "Directora Creativa, ADE1000",
   },
   {
-    text:
-      "This ERP's seamless integration enhanced our business operations and efficiency. Highly recommend for its intuitive interface.",
-    image: "https://randomuser.me/api/portraits/men/4.jpg",
-    name: "Omar Raza",
-    role: "CEO",
+    text: "Alfonso logró que un proyecto de rebranding se convirtiera en un punto de unión para toda la empresa. La gente se siente orgullosa de la nueva marca.",
+    name: "Gerardo",
+    role: "CFO, Grupo Stoever",
   },
   {
-    text:
-      "Its robust features and quick support have transformed our workflow, making us significantly more efficient.",
-    image: "https://randomuser.me/api/portraits/women/5.jpg",
-    name: "Zainab Hussain",
-    role: "Project Manager",
+    text: "Gracias a su proceso, nuestro video corporativo cuenta la historia de la empresa de forma emocionante y clara. Hoy lo usamos como carta de presentación global.",
+    name: "Silvano",
+    role: "CEO, COTEXCA",
   },
   {
-    text:
-      "The smooth implementation exceeded expectations. It streamlined processes, improving overall business performance.",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-    name: "Aliza Khan",
-    role: "Business Analyst",
+    text: "En vez de imponer ideas, nos acompañó a descubrir la esencia de la marca. Eso le dio autenticidad al resultado final del branding.",
+    name: "Ivana",
+    role: "Fundadora, FLUXO CAPITAL",
   },
   {
-    text:
-      "Our business functions improved with a user-friendly design and positive customer feedback.",
-    image: "https://randomuser.me/api/portraits/men/7.jpg",
-    name: "Farhan Siddiqui",
-    role: "Marketing Director",
+    text: "El proceso fue tan claro que no sentimos estrés. Supimos en cada etapa qué venía y cómo se vería. La web y el contenido salieron impecables.",
+    name: "Carlo",
+    role: "Arquitecto, MT3 ARQUITECTOS",
   },
   {
-    text:
-      "They delivered a solution that exceeded expectations, understanding our needs and enhancing our operations.",
-    image: "https://randomuser.me/api/portraits/women/8.jpg",
-    name: "Sana Sheikh",
-    role: "Sales Manager",
+    text: "Nos ayudó a entender que el diseño no es solo estética, es estrategia. Nuestro sitio ahora comunica con propósito.",
+    name: "Ale",
+    role: "Fundadora, BRAND OF TALENT",
   },
   {
-    text:
-      "Using this ERP, our online presence and conversions significantly improved, boosting business performance.",
-    image: "https://randomuser.me/api/portraits/men/9.jpg",
-    name: "Hassan Ali",
-    role: "E-commerce Manager",
+    text: "Escucha, entiende y propone. No te entrega un trabajo cualquiera, te entrega algo que tiene sentido para tu negocio.",
+    name: "Eduardo",
+    role: "Fundador, PLAGASA",
   },
 ];
 
@@ -101,27 +82,18 @@ function TestimonialsColumn(props: {
       >
         {[...new Array(2)].map((_, index) => (
           <React.Fragment key={index}>
-            {props.testimonials.map(({ text, image, name, role }, i) => (
+            {props.testimonials.map(({ text, name, role }, i) => (
               <div
                 className="p-10 rounded-3xl border shadow-lg max-w-xs w-full"
                 key={`${index}-${i}`}
               >
-                <div>{text}</div>
-                <div className="flex items-center gap-2 mt-5">
-                  <img
-                    width={40}
-                    height={40}
-                    src={image}
-                    alt={name}
-                    className="h-10 w-10 rounded-full"
-                  />
-                  <div className="flex flex-col">
-                    <div className="font-medium tracking-tight leading-5">
-                      {name}
-                    </div>
-                    <div className="leading-5 opacity-60 tracking-tight">
-                      {role}
-                    </div>
+                <div className="mb-6 text-sm italic">{text}</div>
+                <div className="flex flex-col">
+                  <div className="font-medium tracking-tight leading-5">
+                    — {name}
+                  </div>
+                  <div className="leading-5 opacity-60 tracking-tight">
+                    {role}
                   </div>
                 </div>
               </div>
