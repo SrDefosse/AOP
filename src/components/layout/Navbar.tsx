@@ -46,16 +46,16 @@ function Navbar() {
           </Link>
           <div className="hidden md:flex space-x-8 items-center">
             <Link to="/" className="text-white hover:text-gray-300 transition-colors duration-300">
-              Home
+              Inicio
             </Link>
             <Link to="/projects" className="text-white hover:text-gray-300 transition-colors duration-300">
-              Projects
+              Proyectos
             </Link>
             <Link 
               to="/contact" 
               className="bg-white/20 text-white font-semibold py-2 px-4 rounded-lg hover:bg-white/30 transition-all duration-300"
             >
-              Contact
+              Contacto
             </Link>
           </div>
           <div className="md:hidden">
@@ -73,17 +73,17 @@ function Navbar() {
       >
         <div className="flex flex-col items-center p-4 space-y-4">
           <Link to="/" onClick={toggleMenu} className="text-white w-full text-center py-2">
-            Home
+            Inicio
           </Link>
           <Link to="/projects" onClick={toggleMenu} className="text-white w-full text-center py-2">
-            Projects
+            Proyectos
           </Link>
           <Link 
             to="/contact"
             onClick={toggleMenu}
             className="bg-white/20 text-white font-semibold w-full text-center py-2 px-4 rounded-lg hover:bg-white/30 transition-all duration-300"
           >
-            Contact
+            Contacto
           </Link>
         </div>
       </div>
