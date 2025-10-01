@@ -1,5 +1,7 @@
+import Blueprint from "../../components/proyectos/Blueprint";
+
 function Fluxo() {
-  return <h1>FLUXO</h1>;
+  return <Blueprint projectId="fluxo" />;
 }
 
 export default Fluxo;

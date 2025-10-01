@@ -1,5 +1,7 @@
+import Blueprint from "../../components/proyectos/Blueprint";
+
 function Mt3() {
-  return <h1>MT.3</h1>;
+  return <Blueprint projectId="mt3" />;
 }
 
 export default Mt3;

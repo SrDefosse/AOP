@@ -1,5 +1,7 @@
+import Blueprint from "../../components/proyectos/Blueprint";
+
 function Visitapp() {
-  return <h1>VISITAPP</h1>;
+  return <Blueprint projectId="visitapp" />;
 }
 
 export default Visitapp;

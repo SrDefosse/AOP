@@ -1,5 +1,7 @@
+import Blueprint from "../../components/proyectos/Blueprint";
+
 function Stoever() {
-  return <h1>STOEVER</h1>;
+  return <Blueprint projectId="stoever" />;
 }
 
 export default Stoever;

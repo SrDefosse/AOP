@@ -5,7 +5,6 @@ import GalleryDemo from '../components/Gallery'
 import Skills from '../components/Skills'
 import ProjectGallery from '../components/ProjectGallery'
 import Logos from '../components/Logos'
-import ProjectContent from '../components/ProjectContent'
 import Testimonials from '../components/Testimonials'
 import Phrase from '../components/Phrase'
 import FooterMinimal from '../components/Footer'
@@ -34,9 +33,6 @@ function Home() {
         </div>
         <div>
           <ProjectGallery />
-        </div>
-        <div>
-          <ProjectContent />
         </div>
         <div>
           <Logos />

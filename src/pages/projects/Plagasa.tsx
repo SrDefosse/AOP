@@ -1,5 +1,7 @@
+import Blueprint from "../../components/proyectos/Blueprint";
+
 function Plagasa() {
-  return <h1>PLAGASA</h1>;
+  return <Blueprint projectId="plagasa" />;
 }
 
 export default Plagasa;

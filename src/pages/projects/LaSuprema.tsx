@@ -1,5 +1,7 @@
+import Blueprint from "../../components/proyectos/Blueprint";
+
 function LaSuprema() {
-  return <h1>LA SUPREMA</h1>;
+  return <Blueprint projectId="lasuprema" />;
 }
 
 export default LaSuprema;

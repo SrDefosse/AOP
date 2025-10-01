@@ -1,5 +1,7 @@
+import Blueprint from "../../components/proyectos/Blueprint";
+
 function AmericanOneInsurance() {
-  return <h1>AMERICAN ONE INSURANCE</h1>;
+  return <Blueprint projectId="americanoneinsurance" />;
 }
 
 export default AmericanOneInsurance;
