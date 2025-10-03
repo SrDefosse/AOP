@@ -70,7 +70,7 @@ export default function ParallaxContent({
               "radial-gradient(ellipse at center, rgba(0,0,0,0.08), transparent 50%)",
           }}
         />
-        <h1 className="text-center text-4xl font-bold">
+        <h1 className="text-center text-4xl font-bold text-white">
           {title}
         </h1>
       </div>

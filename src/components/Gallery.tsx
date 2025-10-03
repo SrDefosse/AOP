@@ -1,9 +1,25 @@
 // Gallery.tsx
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 type CardItem = {
   title: string;
   src: string;
+  route?: string;
+};
+
+// Función para mapear títulos con rutas
+const getProjectRoute = (title: string): string => {
+  const routeMap: { [key: string]: string } = {
+    "Plagasa": "/projects/plagasa",
+    "Fluxo": "/projects/fluxo",
+    "Stoever Group": "/projects/stoever",
+    "Stoever Construction": "/projects/stoever",
+    "MT3": "/projects/mt3",
+    "Datz bites": "/projects/datzbites"
+  };
+
+  return routeMap[title] || "/projects";
 };
 
 interface CardProps {
@@ -21,11 +37,14 @@ const CardComponent: React.FC<CardProps> = ({ card, index, hovered, setHovered }
   const overlayBase = "absolute inset-0 bg-black/50 flex items-end py-8 px-4 transition-opacity duration-300";
   const overlayOpacity = hovered === index ? " opacity-100" : " opacity-0";
 
+  const projectRoute = getProjectRoute(card.title);
+
   return (
-    <div
+    <Link
+      to={projectRoute}
       onMouseEnter={() => setHovered(index)}
       onMouseLeave={() => setHovered(null)}
-      className={`${baseClasses}${blurredClass}`}
+      className={`${baseClasses}${blurredClass} cursor-pointer`}
     >
       <div className="absolute inset-0 w-full h-full">
         <img
@@ -42,7 +61,7 @@ const CardComponent: React.FC<CardProps> = ({ card, index, hovered, setHovered }
           {card.title}
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
@@ -65,7 +84,7 @@ export function FocusCards({ cards }: { cards: CardItem[] }) {
 export default function GalleryDemo(): React.ReactNode {
   const cards: CardItem[] = [
     {
-      title: "Plaga",
+      title: "Plagasa",
       src: "/gallery/gallery1.png",
     },
     {

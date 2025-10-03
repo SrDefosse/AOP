@@ -9,14 +9,16 @@ import Mt3 from './pages/projects/Mt3';
 import Plagasa from './pages/projects/Plagasa';
 import Stoever from './pages/projects/Stoever';
 import Visitapp from './pages/projects/Visitapp';
-import AmericanOneInsurance from './pages/projects/AmericanOneInsurance';
+import DatzBites from './pages/projects/DatzBites';
 import './App.css'
 import Navbar from './components/layout/Navbar';
-import useSmoothScroll from './hooks/useSmoothScroll'
+import useScrollToTop from './hooks/ScrollToTop';
+import useSmoothScroll from './hooks/useSmoothScroll';
 
 
 function App() {
   useSmoothScroll();
+  useScrollToTop();
   
   return (
     <div className="relative min-h-screen">
@@ -43,7 +45,7 @@ function App() {
           <Route path="/projects/plagasa" element={<Plagasa />} />
           <Route path="/projects/stoever" element={<Stoever />} />
           <Route path="/projects/visitapp" element={<Visitapp />} />
-          <Route path="/projects/american-one-insurance" element={<AmericanOneInsurance />} />
+          <Route path="/projects/datzbites" element={<DatzBites />} />
         </Routes>
       </div>
     </div>

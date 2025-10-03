@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { IoArrowForward } from "react-icons/io5";
+import { Button } from "./ui/Button";
 
 interface Project {
   id: number;
@@ -49,6 +50,17 @@ const projects: Project[] = [
     logo: "/logos/visitapp_logo.png",
   }
 ];
+
+// Map project titles to their routes
+const getProjectRoute = (title: string): string => {
+  const routes: { [key: string]: string } = {
+    "Grupo Stoever": "/projects/Stoever",
+    "Fluxo": "/projects/Fluxo",
+    "ADE1000": "/projects/Ade1000",
+    "VISITAPP": "/projects/Visitapp",
+  };
+  return routes[title] || "/projects";
+};
 
 const ProjectCard = ({ project, index }: { project: Project; index: number }) => {
   return (
@@ -103,13 +115,14 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
         </div>
 
         {/* Action */}
-        <motion.button
-          whileHover={{ x: 4 }}
-          className="group flex items-center gap-2 text-sm font-semibold text-gray-200 hover:text-white transition-colors"
+        <Button
+          href={getProjectRoute(project.title)}
+          variant="primary"
+          size="sm"
+          icon={<IoArrowForward className="w-4 h-4" />}
         >
-          Ver detalles 
-          <IoArrowForward className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-        </motion.button>
+          Ver proyecto
+        </Button>
       </div>
     </motion.div>
   );
@@ -149,13 +162,14 @@ export default function ProjectCards() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="text-center mt-16"
         >
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center gap-3 bg-neutral-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-neutral-800 transition-colors shadow-lg cursor-pointer"
+          <Button
+            variant="secondary"
+            size="lg"
+            icon={<IoArrowForward className="w-5 h-5" />}
+            className="mx-auto"
           >
-            Contáctame <IoArrowForward className="w-5 h-5" />
-          </motion.button>
+            Contáctame
+          </Button>
         </motion.div>
       </div>
     </section>

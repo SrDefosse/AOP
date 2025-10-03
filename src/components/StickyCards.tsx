@@ -6,7 +6,7 @@ const projects = [
   {
     title: "ADE1000",
     description: "Advanced management platform designed for efficiency and scalability in modern business environments.",
-    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "/logos/ade1000_logo.png",
     bgColor: "bg-gradient-to-br from-white/30 via-white/40 to-white/30 dark:from-gray-700/10 dark:via-gray-600/15 dark:to-gray-700/10",
     textColor: "text-gray-100",
     route: "/projects/ade1000"
@@ -14,7 +14,7 @@ const projects = [
   {
     title: "FLUXO",
     description: "Dynamic workflow optimization tool that streamlines processes and enhances team productivity.",
-    imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "/logos/fluxo_logo.png",
     bgColor: "bg-gradient-to-br from-white/30 via-white/40 to-white/30 dark:from-gray-700/10 dark:via-gray-600/15 dark:to-gray-700/10",
     textColor: "text-gray-100",
     route: "/projects/fluxo"
@@ -22,7 +22,7 @@ const projects = [
   {
     title: "LA SUPREMA",
     description: "Premium solution crafted for excellence, delivering superior performance and user experience.",
-    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "/logos/la_suprema_logo.png",
     bgColor: "bg-gradient-to-br from-white/30 via-white/40 to-white/30 dark:from-gray-700/10 dark:via-gray-600/15 dark:to-gray-700/10",
     textColor: "text-gray-100",
     route: "/projects/la-suprema"
@@ -30,7 +30,7 @@ const projects = [
   {
     title: "MT.3",
     description: "Next-generation technology platform built with cutting-edge innovation and robust architecture.",
-    imageUrl: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "/logos/mt3_logo.png",
     bgColor: "bg-gradient-to-br from-white/30 via-white/40 to-white/30 dark:from-gray-700/10 dark:via-gray-600/15 dark:to-gray-700/10",
     textColor: "text-gray-100",
     route: "/projects/mt3"
@@ -38,7 +38,7 @@ const projects = [
   {
     title: "PLAGASA",
     description: "Comprehensive solution focused on reliability and performance optimization for enterprise clients.",
-    imageUrl: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "/logos/plagasa_logo.png",
     bgColor: "bg-gradient-to-br from-white/30 via-white/40 to-white/30 dark:from-gray-700/10 dark:via-gray-600/15 dark:to-gray-700/10",
     textColor: "text-gray-100",
     route: "/projects/plagasa"
@@ -46,7 +46,7 @@ const projects = [
   {
     title: "STOEVER",
     description: "Innovative storage and management system designed for seamless integration and optimal performance.",
-    imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68e2c6b7a5?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "/logos/gs_logo.png",
     bgColor: "bg-gradient-to-br from-white/30 via-white/40 to-white/30 dark:from-gray-700/10 dark:via-gray-600/15 dark:to-gray-700/10",
     textColor: "text-gray-100",
     route: "/projects/stoever"
@@ -54,18 +54,18 @@ const projects = [
   {
     title: "VISITAPP",
     description: "Mobile application that revolutionizes visitor management with intuitive design and powerful features.",
-    imageUrl: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "/logos/visitapp_logo.png",
     bgColor: "bg-gradient-to-br from-white/30 via-white/40 to-white/30 dark:from-gray-700/10 dark:via-gray-600/15 dark:to-gray-700/10",
     textColor: "text-gray-100",
     route: "/projects/visitapp"
   },
   {
-    title: "AMERICAN ONE INSURANCE",
-    description: "Comprehensive insurance management platform providing secure and efficient policy administration.",
-    imageUrl: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "DATZ BITES",
+    description: "Innovative gastronomic platform offering exceptional culinary experiences with modern digital solutions.",
+    imageUrl: "/logos/datzbites_logo.png",
     bgColor: "bg-gradient-to-br from-white/30 via-white/40 to-white/30 dark:from-gray-700/10 dark:via-gray-600/15 dark:to-gray-700/10",
     textColor: "text-gray-100",
-    route: "/projects/american-one-insurance"
+    route: "/projects/datzbites"
   },
 ];
 
@@ -170,16 +170,20 @@ export function StickyFeatureSection() {
                   </div>
                   
                   {/* Card Image */}
-                  <div className="image-wrapper mt-8 md:mt-0 relative">
-                    <div className="relative overflow-hidden rounded-2xl backdrop-blur-sm bg-white/5 dark:bg-black/5 border border-white/30 dark:border-white/20 shadow-2xl">
-                      <img 
-                          src={project.imageUrl} 
-                          alt={project.title}
-                          loading="lazy"
-                          className="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
-                          // Simple fallback in case an image fails to load
-                          onError={(e: any) => { e.target.onerror = null; e.target.src = "https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found"; }}
-                      />
+                  {/* Contenedor visible grande - estandariza el tamaño de cada card */}
+                  <div className="mt-8 md:mt-0 relative">
+                    <div className="relative overflow-hidden rounded-2xl backdrop-blur-sm bg-white/5 dark:bg-black/5 border border-white/30 dark:border-white/20 shadow-2xl h-80 md:h-96 flex items-center justify-center p-8">
+                      {/* Contenedor invisible más pequeño - contiene la imagen */}
+                      <div className="w-full max-w-xs md:max-w-sm h-full flex items-center justify-center">
+                        <img 
+                            src={project.imageUrl} 
+                            alt={project.title}
+                            loading="lazy"
+                            className="w-full h-full object-contain transition-transform duration-500 hover:scale-105"
+                            // Simple fallback in case an image fails to load
+                            onError={(e: any) => { e.target.onerror = null; e.target.src = "https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found"; }}
+                        />
+                      </div>
                       {/* Glassmorphism overlay */}
                       <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-white/10 dark:to-white/5 pointer-events-none"></div>
                     </div>

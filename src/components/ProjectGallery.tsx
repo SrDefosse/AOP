@@ -75,7 +75,7 @@ export default function ProjectGallery() {
 
   return (
     <div className="font-sans">
-      <section className="container mx-auto px-4 py-12 md:py-24">
+      <section className="container mx-auto md:px-16 py-12 md:py-24">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           
           {/* Left Side: Text Content */}

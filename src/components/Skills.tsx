@@ -1,16 +1,16 @@
 import { motion } from "framer-motion";
-import { 
-  SiFigma, 
-  SiNotion, 
-  SiGoogleanalytics, 
-  SiSlack,
+import {
+  SiFigma,
+  SiNotion,
+  SiAsana,
+  SiGoogle,
+  SiMeta,
   SiTrello,
-  SiMiro,
-  SiAdobecreativecloud,
-  SiCanva
+  SiN8N,
+  SiClickup
 } from "react-icons/si";
-import { FaCode, FaSearch } from "react-icons/fa";
-import { BsBrush, BsGraphUp } from "react-icons/bs";
+import { FaMicrosoft } from "react-icons/fa";
+import { TbBrandOpenai, TbBrandFramer, TbSparkles } from "react-icons/tb";
 
 interface SkillBarProps {
   skill: string;
@@ -91,18 +91,18 @@ export default function Skills() {
   ];
 
   const tools = [
-    { icon: <SiFigma />, name: "Figma" },
-    { icon: <BsBrush />, name: "Design" },
-    { icon: <FaCode />, name: "Development" },
-    { icon: <SiGoogleanalytics />, name: "Analytics" },
-    { icon: <SiMiro />, name: "Miro" },
     { icon: <SiNotion />, name: "Notion" },
-    { icon: <SiSlack />, name: "Slack" },
-    { icon: <BsGraphUp />, name: "Growth" },
+    { icon: <SiAsana />, name: "Asana" },
+    { icon: <SiFigma />, name: "Figma" },
+    { icon: <SiGoogle />, name: "Google" },
+    { icon: <SiMeta />, name: "Meta" },
+    { icon: <FaMicrosoft />, name: "Microsoft" },
+    { icon: <SiClickup />, name: "ClickUp" },
+    { icon: <SiN8N />, name: "N8N" },
     { icon: <SiTrello />, name: "Trello" },
-    { icon: <SiAdobecreativecloud />, name: "Adobe" },
-    { icon: <FaSearch />, name: "Research" },
-    { icon: <SiCanva />, name: "Canva" }
+    { icon: <TbSparkles />, name: "Sora" },
+    { icon: <TbBrandFramer />, name: "Midjourney" },
+    { icon: <TbBrandOpenai />, name: "ChatGPT" },
   ];
 
   return (
@@ -157,7 +157,7 @@ export default function Skills() {
             >
               Herramientas
             </motion.h3>
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid grid-cols-4 gap-4">
               {tools.map((tool, index) => (
                 <ToolIcon
                   key={tool.name}

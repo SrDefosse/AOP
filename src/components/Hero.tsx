@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import type { ReactNode } from "react";
 import { motion } from "framer-motion";
-import { IoArrowForward, IoCall } from "react-icons/io5";
+import { IoCall } from "react-icons/io5";
 
 interface ButtonProps {
   children: ReactNode;
@@ -61,11 +61,6 @@ export default function Hero() {
             {/* Overlay para mejorar legibilidad del texto */}
             <div className="w-full h-full bg-black/30 rounded-3xl flex items-center justify-center">
               <div className="flex gap-8 py-12 lg:py-20 items-center justify-center flex-col max-w-4xl mx-auto px-6">
-                <div>
-                  <Button variant="secondary" size="sm" className="gap-4">
-                    Read our launch article <IoArrowForward className="w-4 h-4" />
-                  </Button>
-                </div>
                 <div className="flex gap-4 flex-col">
                   <h1 className="text-5xl md:text-7xl max-w-2xl tracking-tighter text-center font-regular text-white">
                     <span className="text-spektr-cyan-50">Construyo marcas y estrategias que inspiran</span>
